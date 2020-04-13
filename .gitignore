@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs
+/Quick Application1/DAL/bin/Debug/netcoreapp3.0
+/Quick Application1/DAL/obj
+/Quick Application1/Quick_Application1/bin/Debug/netcoreapp3.0
+/Quick Application1/Quick_Application1/Logs
+/Quick Application1/Quick_Application1/obj
