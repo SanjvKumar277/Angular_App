@@ -16,9 +16,10 @@ using DAL.Models;
 using DAL.Core.Interfaces;
 using Quick_Application1.Authorization;
 using Quick_Application1.Helpers;
-using Microsoft.AspNetCore.JsonPatch;
+//using Microsoft.AspNetCore.JsonPatch;
 using DAL.Core;
 using IdentityServer4.AccessTokenValidation;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace Quick_Application1.Controllers
 {
