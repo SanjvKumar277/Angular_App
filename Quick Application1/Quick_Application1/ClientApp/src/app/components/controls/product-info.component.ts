@@ -20,7 +20,7 @@ import { Utilities } from '../../services/utilities';
   styleUrls: ['./product-info.component.scss']
 })
 export class ProductInfoComponent implements OnInit, OnDestroy {
-  public static readonly DBKeyTodoDemo = 'product-info.todo_list';
+  public static readonly DBKeyProductInfo = 'product-info.todo_list';
 
   rows = [];
   rowsCache = [];
@@ -108,8 +108,8 @@ export class ProductInfoComponent implements OnInit, OnDestroy {
         prop: 'completed', name: '', width: 30, headerTemplate: this.statusHeaderTemplate,
         cellTemplate: this.statusTemplate, resizeable: false, canAutoResize: false, sortable: false, draggable: false
       },
-      { prop: 'name', name: gT('todoDemo.management.Task'), cellTemplate: this.nameTemplate, width: 200 },
-      { prop: 'description', name: gT('todoDemo.management.Description'), cellTemplate: this.descriptionTemplate, width: 500 },
+      { prop: 'name', name: gT('productInfo.management.Task'), cellTemplate: this.nameTemplate, width: 200 },
+      { prop: 'description', name: gT('productInfo.management.Description'), cellTemplate: this.descriptionTemplate, width: 500 },
       { name: '', width: 80, cellTemplate: this.actionsTemplate, resizeable: false, canAutoResize: false, sortable: false, draggable: false }
     ];
   }
@@ -210,12 +210,12 @@ export class ProductInfoComponent implements OnInit, OnDestroy {
   }
 
   getFromDisk() {
-    return this.localStorage.getDataObject(`${ProductInfoComponent.DBKeyTodoDemo}:${this.currentUserId}`);
+    return this.localStorage.getDataObject(`${ProductInfoComponent.DBKeyProductInfo}:${this.currentUserId}`);
   }
 
   saveToDisk() {
     if (this.isDataLoaded) {
-      this.localStorage.saveSyncedSessionData(this.rowsCache, `${ProductInfoComponent.DBKeyTodoDemo}:${this.currentUserId}`);
+      this.localStorage.saveSyncedSessionData(this.rowsCache, `${ProductInfoComponent.DBKeyProductInfo}:${this.currentUserId}`);
     }
   }
 }

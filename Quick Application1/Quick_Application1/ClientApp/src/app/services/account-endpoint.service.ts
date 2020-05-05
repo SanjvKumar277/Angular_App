@@ -62,7 +62,6 @@ export class AccountEndpoint extends EndpointBase {
 
   getUsersEndpoint<T>(page?: number, pageSize?: number): Observable<T> {
     const endpointUrl = page && pageSize ? `${this.usersUrl}/${page}/${pageSize}` : this.usersUrl;
-
     return this.http.get<T>(endpointUrl, this.requestHeaders).pipe<T>(
       catchError(error => {
         return this.handleError(error, () => this.getUsersEndpoint(page, pageSize));
