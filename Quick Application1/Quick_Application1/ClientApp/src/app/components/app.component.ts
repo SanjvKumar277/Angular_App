@@ -34,7 +34,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   shouldShowLoginModal: boolean;
   removePrebootScreen: boolean;
   newNotificationCount = 0;
-  appTitle = 'Quick_Application1';
+  appTitle = 'DotnetCore&AngularJs';
   appLogo = require('../assets/images/logo-white.png');
 
   stickyToasties: number[] = [];
