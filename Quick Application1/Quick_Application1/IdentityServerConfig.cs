@@ -15,7 +15,7 @@ namespace Quick_Application1
     public class IdentityServerConfig
     {
         public const string ApiName = "quickapp_api";
-        public const string ApiFriendlyName = "Quick_Application1 API";
+        public const string ApiFriendlyName = "Rest API";
         public const string QuickAppClientID = "quickapp_spa";
         public const string SwaggerClientID = "swaggerui";
 
