@@ -204,7 +204,7 @@ namespace Quick_Application1
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.DocumentTitle = "Swagger UI - Quick_Application1";
+                c.DocumentTitle = "Swagger UI";
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", $"{IdentityServerConfig.ApiFriendlyName} V1");
                 c.OAuthClientId(IdentityServerConfig.SwaggerClientID);
                 c.OAuthClientSecret("no_password"); //Leaving it blank doesn't work
